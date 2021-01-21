@@ -65,6 +65,9 @@ Project can be found at the following url [vector-project.herokuapp.com](https:/
 * ### Data Visualization
 
   Visualization was done utilizing a combination of Plotly Express and Plotly's baceline Graph Objects. 
+  
+  
+  Refreshing the page should restart the visualizations and reveret settings back to baseline.
 
 
 ## About the Project
