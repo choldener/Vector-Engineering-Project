@@ -3,7 +3,7 @@ import plotly.express as px
 
 def create_time_series_country(data):
     """Creates a line graph when clicking a country"""
-    fig = px.line(data, x = 'Date', y = ['total_sequence', 'Cases'])
+    fig = px.line(data, x = 'Date', y = ['total_sequence', 'Cases'], title='Country Selected')
     fig.update_xaxes(showspikes= True, spikedash="dot")
     fig.update_layout(hovermode='x', spikedistance=1000, plot_bgcolor="#FFFFFF", width = 900)
     return fig
