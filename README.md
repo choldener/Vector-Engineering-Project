@@ -1,6 +1,6 @@
 # COVID-19 Sequencing Dashboard
 
-Project can be found at the following url [placeholder](url)
+Project can be found at the following url [vector-project.herokuapp.com](https://vector-project.herokuapp.com/)
 
 ## Table of Contents
 
