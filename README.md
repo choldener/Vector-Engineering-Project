@@ -1,6 +1,6 @@
 # COVID-19 Sequencing Dashboard
 
-Project can be found at the following url [placeholder](url)
+Project can be found at the following url [vector-project.herokuapp.com](https://vector-project.herokuapp.com/)
 
 ## Table of Contents
 
@@ -23,10 +23,16 @@ Project can be found at the following url [placeholder](url)
   pip install -r requirements.txt
   ```
   Project also requires connection to the internet in order to pull the data from online sources.
+  A Mapbox token is required for the application to run locally.
   
 ## Setup and Running
 
-  Once the required packages are installed, setup is minimal. Clone this repository and open/run app.py. A local server should run and you should now be able to nagivate to the application locally.
+  Once the required packages are installed, setup is minimal. Clone this repository to get all the required files. 
+  Take the mapbox token you aquired and paste it into the mapbox_key.txt file. 
+  Run app.py to start the local server.
+  
+  
+  A local server should run and you should now be able to nagivate to the application locally.
 
 
 ## Project Outline
