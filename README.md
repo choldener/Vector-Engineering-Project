@@ -51,7 +51,7 @@ Project can be found at the following url [vector-project.herokuapp.com](https:/
   2) Sequence data is called, date is converted from a string to pd.DateTime, and column names are changed for easier merging.
   3) Case data and sequence is merged using a left join on Country and Date columns. new_sequences and Cases columns had null data filled by zeros, while new_sequences was also      grouped and a cumulative sum calculated for each country on each date. This alowed for all further tests and calculations to be done on the data.
 * ### Data Dictionary
-
+  Data Dictionary can be found [here](https://github.com/choldener/Vector-Engineering-Project/blob/main/Data%20Dictonary.xlsx).
 
 * ### Dashboard
 
