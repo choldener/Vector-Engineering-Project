@@ -14,10 +14,9 @@ from pipeline.call_data import call_full_data
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
-#COMMENT THE PREVIOUS CODE IF HOSTING LOCALLY 
-
 app.title = 'Covid-19 Dashboard'
+
+
 px.set_mapbox_access_token(open('mapbox_key.txt').read())
 all_continents = call_full_data()['continent'].unique()
 data = call_full_data()
@@ -32,7 +31,7 @@ app.layout = html.Div([
     ], className="banner"),
     
     html.P("This interactive Dashboard aims to provide visualization for global COVID-19 sequencing coverage. This dashboard is fully interactive and easily customizable. A full writeup can be found at the following link: "),
-    dcc.Link('github.com/choldener/Vector-Project', href='https://github.com/choldener/Vector-Project'),
+    dcc.Link('github.com/choldener/Vector-Engineering-Project', href='https://github.com/choldener/Vector-Engineering-Project'),
     
     #ROW 1
     html.Div([
@@ -143,7 +142,6 @@ app.layout = html.Div([
 
 ##CALLBACKS##
 
-
 #LineGraph Callback
 @app.callback(
     Output('data_line_fig', 'figure'),
@@ -161,8 +159,8 @@ def update_map_line(ClickData, log_radio_line, checklist,case_sequence_checklist
         fig = create_time_series_continent(data[mask], case_sequence_checklist)
     fig.update_yaxes(type=log_radio_line)
     fig.update_layout(transition_duration=500)
-    try:print(ClickData['points'][0]['location'])
-    except: print('unable to print')
+    #try:print(ClickData['points'][0]['location'])
+    #except: print('unable to print')
     return fig
 
 
@@ -208,4 +206,4 @@ def update_ratio_bar(min_seq):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False, use_reloader=False)
+    app.run_server(debug=True, use_reloader=False)
