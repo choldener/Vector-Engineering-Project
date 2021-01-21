@@ -29,7 +29,7 @@ Project can be found at the following url [placeholder](url)
 
   Once the required packages are installed, setup is minimal. Clone this repository to get all the required files. 
   Take the mapbox token you aquired and paste it into the mapbox_key.txt file. 
-  Run app.py to start the local server
+  Run app.py to start the local server.
   
   
   A local server should run and you should now be able to nagivate to the application locally.
